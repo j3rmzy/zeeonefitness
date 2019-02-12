@@ -1,0 +1,16 @@
+{
+  "name": "zeeonefitness",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0"
+  },
+  "scripts": {
+    "sass": "./node_modules/gulp/bin/gulp.js sass",
+    "sass:watch": "./node_modules/gulp/bin/gulp.js sass:watch"
+  }
+}
