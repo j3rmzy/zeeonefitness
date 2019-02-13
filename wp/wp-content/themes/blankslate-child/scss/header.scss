@@ -1,0 +1,15 @@
+#header {
+  #site-title {
+    align-items: center;
+    background-color: $black;
+    display: flex;
+    justify-content: center;
+    padding: $spacing-x2 0;
+
+    a {
+      color: $white;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+}

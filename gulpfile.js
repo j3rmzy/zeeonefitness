@@ -11,7 +11,7 @@ const paths = {
 gulp.task('sass', function () {
   return gulp.src(paths.theme + 'scss/style.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(concat('style.css'))
+    // .pipe(concat('style.css'))
     .pipe(gulp.dest(paths.theme));
 });
 

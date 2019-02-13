@@ -1,0 +1,29 @@
+#footer {
+  background-color: $black;
+  color: $yellow;
+  padding: $spacing-x2;
+
+  #social-media {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    li {
+      height: 35px;
+      margin: 0 $spacing;
+      width: 35px;
+    }
+  }
+
+  #copyright {
+    color: #f4f4f4;
+    font-size: 0.875rem;
+    margin-top: $spacing-x2;
+    text-align: center;
+    text-transform: uppercase;
+
+    a {
+      color: $greyLight;
+    }
+  }
+}
