@@ -14,7 +14,7 @@
   }
 
   .wrapper {
-    @media ($desktop) {
+    @media ($desktop-lg) {
       @include wrapper-lg;
     }
   }
@@ -53,7 +53,19 @@
   &.about {
     .wrapper {
       @media ($tablet) {
+        margin: 0 auto;
         width: 500px;
+      }
+    }
+  }
+
+  &.contact {
+    background-color: $black;
+    color: $white;
+
+    .wrapper {
+      @media ($desktop) {
+        @include wrapper-md;
       }
     }
   }

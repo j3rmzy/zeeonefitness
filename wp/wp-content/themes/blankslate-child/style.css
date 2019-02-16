@@ -93,6 +93,9 @@ h1 {
         #home-header #home-title .slogan {
           font-size: 6.2rem;
           width: 430px; } }
+      @media (min-width: 992px) {
+        #home-header #home-title .slogan {
+          font-size: 7.2rem; } }
     #home-header #home-title h1 {
       color: #ffba00;
       font-size: 2.4rem;
@@ -183,7 +186,7 @@ h1 {
     margin-bottom: 16px;
     text-align: center;
     text-transform: uppercase; }
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     .section .wrapper {
       width: 1024px;
       margin-left: auto;
@@ -209,4 +212,45 @@ h1 {
     text-align: center; }
   @media (min-width: 768px) {
     .section.about .wrapper {
+      margin: 0 auto;
       width: 500px; } }
+  .section.contact {
+    background-color: #000000;
+    color: #ffffff; }
+    @media (min-width: 992px) {
+      .section.contact .wrapper {
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto; } }
+
+.contact form {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .contact form {
+      flex-direction: row;
+      justify-content: space-between;
+      display: flex; } }
+  .contact form .form-block {
+    margin-bottom: 8px;
+    display: flex; }
+  @media (min-width: 768px) {
+    .contact form .form-block-wrapper {
+      width: 49%; } }
+  .contact form input[type=text],
+  .contact form input[type=email],
+  .contact form textarea {
+    border: none;
+    padding: 8px;
+    width: 100%; }
+
+.btn {
+  background-color: #ffba00;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 8px;
+  text-transform: uppercase; }
+  .btn:hover {
+    background-color: #ffba01; }
