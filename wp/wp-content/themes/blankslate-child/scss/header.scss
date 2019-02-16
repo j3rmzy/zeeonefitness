@@ -6,10 +6,68 @@
     justify-content: center;
     padding: $spacing-x2 0;
 
+    h1 {
+      font-size: 1.6rem;
+    }
+
     a {
       color: $white;
       text-transform: uppercase;
       text-decoration: none;
+    }
+  }
+}
+
+#default-page-title {
+  background-color: $grey;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: $spacing-x2 0;
+  margin-bottom: $spacing-x2;
+
+  .wrapper {
+    @media ($desktop-lg) {
+      @include wrapper-lg;
+    }
+  }
+}
+
+#home-header {
+  background-color: $black;
+  color: $white;
+
+  .wrapper {
+    @media ($desktop) {
+      @include wrapper-lg;
+    }
+  }
+
+  #home-title {
+    padding: $spacing-x6 0;
+    text-transform: uppercase;
+    
+    .slogan {
+      font-size: 4.2rem;
+      font-weight: 900;
+      line-height: 0.8;
+      width: 290px;
+
+      @media ($tablet) {
+        font-size: 6.2rem;
+        width: 430px;
+      }
+    }
+
+    h1 {
+      color: $yellow;
+      font-size: 2.4rem;
+      font-weight: 300;
+      line-height: 1;
+
+      @media ($tablet) {
+        font-size: 3rem;
+      }
     }
   }
 }

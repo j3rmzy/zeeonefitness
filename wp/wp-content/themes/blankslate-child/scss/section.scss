@@ -1,0 +1,60 @@
+.section {
+  padding: $spacing-x4 0;
+
+  @media ($desktop) {
+    padding: $spacing-x6 0;
+  }
+
+  h2 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-bottom: $spacing-x2;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .wrapper {
+    @media ($desktop) {
+      @include wrapper-lg;
+    }
+  }
+
+  .section-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media ($tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  
+  .section-item {
+    margin-bottom: $spacing-x4;
+    
+    @media ($desktop) {
+      margin-bottom: 0;
+    }
+  }
+  
+  @media ($tablet) {
+    .section-3col {
+      flex-basis: 30%;
+    }
+  }
+
+  &.offers {
+    background-color: $greyDark;
+    color: $white;
+    text-align: center;
+  }
+
+  &.about {
+    .wrapper {
+      @media ($tablet) {
+        width: 500px;
+      }
+    }
+  }
+}

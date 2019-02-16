@@ -8,7 +8,28 @@ $white: #ffffff;
 $yellow: #ffba00;
 $grey: #242424;
 $greyLight: #f4f4f4;
+$greyDark: #333333;
 
 $spacing: 8px;
 $spacing-x2: $spacing * 2;
 $spacing-x3: $spacing * 3;
+$spacing-x4: $spacing * 4;
+$spacing-x5: $spacing * 5;
+$spacing-x6: $spacing * 6;
+
+$tablet: 'min-width: 768px';
+$desktop: 'min-width: 992px';
+$desktop-lg: 'min-width: 1024px';
+
+@mixin wrapper-lg {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin img-responsive {
+  display: block;
+  height: 100%;
+  min-width: 100%;
+  width: 100%;
+}
