@@ -12,3 +12,13 @@ $greyLight: #f4f4f4;
 $spacing: 8px;
 $spacing-x2: $spacing * 2;
 $spacing-x3: $spacing * 3;
+
+$tablet: 'min-width: 768px';
+$desktop: 'min-width: 992px';
+$desktop-lg: 'min-width: 1024px';
+
+@mixin wrapper-lg {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}

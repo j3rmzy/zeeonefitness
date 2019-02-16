@@ -1,0 +1,24 @@
+#default-page-main {
+  flex-grow: 1;
+  margin-bottom: $spacing-x2;
+
+  .wrapper {
+    @media ($desktop-lg) {
+      @include wrapper-lg;
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+  
+      @media ($tablet) {
+        flex-direction: row;
+      }
+    }
+  }
+
+  .content {
+    flex-grow: 1;
+    margin-bottom: $spacing-x2;
+  }
+}

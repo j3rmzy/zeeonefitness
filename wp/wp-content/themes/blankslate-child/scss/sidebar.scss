@@ -1,0 +1,13 @@
+#sidebar {
+  background-color: $black;
+  color: $white;
+  padding: $spacing-x2;
+
+  @media ($tablet) {
+    width: 250px;
+  }
+
+  @media ($desktop) {
+    width: 350px;
+  }
+}

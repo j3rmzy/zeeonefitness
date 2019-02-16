@@ -6,10 +6,29 @@
     justify-content: center;
     padding: $spacing-x2 0;
 
+    h1 {
+      font-size: 1.6rem;
+    }
+
     a {
       color: $white;
       text-transform: uppercase;
       text-decoration: none;
+    }
+  }
+}
+
+#default-page-title {
+  background-color: $grey;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: $spacing-x2 0;
+  margin-bottom: $spacing-x2;
+
+  .wrapper {
+    @media ($desktop-lg) {
+      @include wrapper-lg;
     }
   }
 }
