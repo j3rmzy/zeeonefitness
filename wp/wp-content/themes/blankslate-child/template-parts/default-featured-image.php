@@ -1,3 +1,5 @@
 <div id="featured-image">
-  <img src="https://via.placeholder.com/1024x259" alt="featured image" />
+  <?php if (the_post_thumbnail()) : ?>
+      the_post_thumbnail();
+  <? endif ?>
 </div>

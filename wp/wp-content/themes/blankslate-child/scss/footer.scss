@@ -12,6 +12,10 @@
       height: 35px;
       margin: 0 $spacing;
       width: 35px;
+
+      img {
+        @include img-responsive;
+      }
     }
   }
 

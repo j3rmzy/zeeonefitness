@@ -1,13 +1,22 @@
 #sidebar {
   background-color: $black;
   color: $white;
+  flex-shrink: 0;
   padding: $spacing-x2;
 
   @media ($tablet) {
-    width: 250px;
+    width: 300px;
   }
 
   @media ($desktop) {
-    width: 350px;
+    width: 400px;
+  }
+
+  .sidebar-title {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: $spacing;
+    text-transform: uppercase;
   }
 }

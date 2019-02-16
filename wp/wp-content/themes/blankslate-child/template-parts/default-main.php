@@ -6,11 +6,15 @@
 <article id="default-page-main">
   <div class="wrapper">
     <? get_template_part('template-parts/default', 'featured-image'); ?>
+    
     <div class="content-wrapper">
       <div class="content">
         <? the_content(); ?>
       </div>
-      <? get_template_part('template-parts/default', 'sidebar'); ?>
+
+      <?php if (is_active_sidebar('custom-side-bar')) : ?>
+        <? get_template_part('template-parts/default', 'sidebar'); ?>
+      <?php endif; ?>
     </div>
   </div>
-</main>
+</article>

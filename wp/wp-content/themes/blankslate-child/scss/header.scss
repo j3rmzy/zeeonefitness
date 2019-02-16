@@ -32,3 +32,42 @@
     }
   }
 }
+
+#home-header {
+  background-color: $black;
+  color: $white;
+
+  .wrapper {
+    @media ($desktop) {
+      @include wrapper-lg;
+    }
+  }
+
+  #home-title {
+    padding: $spacing-x6 0;
+    text-transform: uppercase;
+    
+    .slogan {
+      font-size: 4.2rem;
+      font-weight: 900;
+      line-height: 0.8;
+      width: 290px;
+
+      @media ($tablet) {
+        font-size: 6.2rem;
+        width: 430px;
+      }
+    }
+
+    h1 {
+      color: $yellow;
+      font-size: 2.4rem;
+      font-weight: 300;
+      line-height: 1;
+
+      @media ($tablet) {
+        font-size: 3rem;
+      }
+    }
+  }
+}
