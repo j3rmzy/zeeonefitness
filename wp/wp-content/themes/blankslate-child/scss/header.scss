@@ -21,10 +21,13 @@
 #default-page-title {
   background-color: $grey;
   color: $white;
-  text-transform: uppercase;
   font-weight: 600;
   padding: $spacing-x2 0;
-  margin-bottom: $spacing-x2;
+  text-transform: uppercase;
+  
+  h1 {
+    font-size: 3.2rem;
+  }
 
   .wrapper {
     @media ($desktop-lg) {
@@ -38,13 +41,20 @@
   color: $white;
 
   .wrapper {
+    align-items: center;
+    display: grid;
+    height: 300px;
+
+    @media ($tablet) {
+      height: 400px;
+    }
+
     @media ($desktop) {
       @include wrapper-lg;
     }
   }
 
   #home-title {
-    padding: $spacing-x6 0;
     text-transform: uppercase;
     
     .slogan {

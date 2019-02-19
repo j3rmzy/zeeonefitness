@@ -1,5 +1,7 @@
 #featured-image {
   margin-bottom: $spacing-x2;
 
-  @include img-responsive;
+  img {
+    @include img-responsive;
+  }
 }

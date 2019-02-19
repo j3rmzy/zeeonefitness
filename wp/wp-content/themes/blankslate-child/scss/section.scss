@@ -8,7 +8,7 @@
   h2 {
     font-size: 2.6rem;
     font-weight: 600;
-    margin-bottom: $spacing-x2;
+    margin-bottom: $spacing-x3;
     text-align: center;
     text-transform: uppercase;
   }
@@ -40,8 +40,7 @@
   }
 
   &.offers {
-    background-color: $greyDark;
-    color: $white;
+    color: $greyDark;
     text-align: center;
 
     .section-wrapper {
@@ -51,18 +50,39 @@
       padding: 0 $spacing-x2;
   
       @media ($tablet) {
-        grid-column-gap: $spacing-x2;
+        grid-column-gap: $spacing-x3;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
       }
 
       @media ($desktop) {
         @include wrapper-lg;
+        padding: 0 $spacing-x6;
       }
+    }
+
+    .offers-item {
+      align-items: center;
+      color: $white;
+      // background-color: $greyDark;
+      background: linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url('/wp-content/uploads/2019/02/banner-example.jpg')  no-repeat center center;
+
+      display: grid;
+      height: 250px;
+      justify-items: center;
+      font-weight: 600;
+      text-transform: uppercase;
     }
   }
 
   &.about {
+    background-color: $greyDark;
+    color: $white;
+
     .section-wrapper {
       display: grid;
       text-align: center;

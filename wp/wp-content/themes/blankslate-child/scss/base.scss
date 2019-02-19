@@ -8,8 +8,8 @@ body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -38,7 +38,6 @@ h1 {
 }
 
 #main {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
