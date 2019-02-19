@@ -44,7 +44,11 @@ h1 {
 
 #main {
   display: grid;
-  grid-template-rows: auto 1fr; }
+  grid-template-rows: auto 1fr;
+  grid-row-gap: 16px; }
+
+.home #main {
+  grid-row-gap: 0; }
 
 #header #site-title {
   align-items: center;
@@ -234,12 +238,22 @@ h1 {
     .section.offers .offers-item {
       align-items: center;
       color: #ffffff;
-      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/wp-content/uploads/2019/02/banner-example.jpg") no-repeat center center;
       display: grid;
       height: 250px;
       justify-items: center;
       font-weight: 600;
       text-transform: uppercase; }
+      .section.offers .offers-item a {
+        align-items: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/wp-content/uploads/2019/02/banner-example.jpg") no-repeat center center;
+        display: grid;
+        color: #ffffff;
+        justify-items: center;
+        height: 100%;
+        width: 100%; }
+        .section.offers .offers-item a:hover {
+          text-decoration: none;
+          background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("/wp-content/uploads/2019/02/banner-example.jpg") no-repeat center center; }
   .section.about {
     background-color: #333333;
     color: #ffffff; }
