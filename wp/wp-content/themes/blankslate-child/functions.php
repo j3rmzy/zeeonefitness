@@ -21,8 +21,8 @@ function default_sidebar() {
 
 add_action('widgets_init', 'default_sidebar');
 
-add_theme_support('custom_header', array(
-  'video' => true,
+add_theme_support('custom-header', array(
+  'video' => true
 ));
 
 ?>

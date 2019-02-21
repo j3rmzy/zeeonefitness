@@ -37,7 +37,6 @@
 }
 
 #home-header {
-  background-color: $black;
   color: $white;
 
   .wrapper {
@@ -51,24 +50,60 @@
     }
   }
 
-  #featured-image {
+  
+  #featured-header {
     position: relative;
     margin-bottom: 0;
-
-    .wrapper {
-      align-items: center;
-      bottom: 0;
-      display: grid;
-      height: auto;
-      left: 0;
-      right: 0;
-      padding: 0 $spacing-x6;
-      position: absolute;
-      top: 0;
+    
+    #home-header-image {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      background-size: cover;  
     }
 
-    img {
-      height: auto;
+    #home-header-video {
+      overflow: hidden;
+      position: relative;
+
+      .wrapper {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      
+      #wp-custom-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+
+      #wp-custom-header-video {
+        height: 100%;
+        width: 100%;
+      }
+
+      #wp-custom-header-video-button {
+        display: none;
+      }
+
+      #home-title {
+        padding: $spacing-x2 0;
+        position: relative;
+        z-index: 10;
+
+        @media ($tablet) {
+          padding: $spacing-x6 0;
+        }
+
+        @media ($desktop-md) {
+          padding: $spacing-x8;
+        }
+
+        @media ($desktop-lg) {
+          padding: $spacing-x10;
+        }
+      }
     }
   }
 

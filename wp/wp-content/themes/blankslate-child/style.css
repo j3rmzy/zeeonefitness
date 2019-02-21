@@ -87,7 +87,6 @@ h1 {
       margin-right: auto; } }
 
 #home-header {
-  background-color: #000000;
   color: #ffffff; }
   #home-header .wrapper {
     align-items: center;
@@ -99,21 +98,43 @@ h1 {
         width: 1024px;
         margin-left: auto;
         margin-right: auto; } }
-  #home-header #featured-image {
+  #home-header #featured-header {
     position: relative;
     margin-bottom: 0; }
-    #home-header #featured-image .wrapper {
-      align-items: center;
-      bottom: 0;
-      display: grid;
-      height: auto;
-      left: 0;
-      right: 0;
-      padding: 0 48px;
-      position: absolute;
-      top: 0; }
-    #home-header #featured-image img {
-      height: auto; }
+    #home-header #featured-header #home-header-image {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      background-size: cover; }
+    #home-header #featured-header #home-header-video {
+      overflow: hidden;
+      position: relative; }
+      #home-header #featured-header #home-header-video .wrapper {
+        padding-top: 0;
+        padding-bottom: 0; }
+      #home-header #featured-header #home-header-video #wp-custom-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0; }
+      #home-header #featured-header #home-header-video #wp-custom-header-video {
+        height: 100%;
+        width: 100%; }
+      #home-header #featured-header #home-header-video #wp-custom-header-video-button {
+        display: none; }
+      #home-header #featured-header #home-header-video #home-title {
+        padding: 16px 0;
+        position: relative;
+        z-index: 10; }
+        @media (min-width: 768px) {
+          #home-header #featured-header #home-header-video #home-title {
+            padding: 48px 0; } }
+        @media (min-width: 992px) {
+          #home-header #featured-header #home-header-video #home-title {
+            padding: 64px; } }
+        @media (min-width: 1200px) {
+          #home-header #featured-header #home-header-video #home-title {
+            padding: 80px; } }
   #home-header #home-title {
     text-transform: uppercase; }
     #home-header #home-title .slogan {
