@@ -1,7 +1,7 @@
 .section {
   padding: $spacing-x6 0;
 
-  @media ($desktop) {
+  @media ($desktop-lg) {
     padding: $spacing-x6 0;
   }
 
@@ -28,8 +28,13 @@
   .section-wrapper {
     padding: 0 $spacing-x3;
 
-    @media ($desktop) {
+    @media ($tablet) {
+      @include wrapper-tablet;
+    }
+
+    @media ($desktop-lg) {
       @include wrapper-lg;
+      padding: 0;
     }
   }
   
@@ -47,24 +52,17 @@
       display: grid;
       grid-template-rows: repeat(3, 1fr);
       grid-row-gap: $spacing-x3;
-      padding: 0 $spacing-x2;
   
       @media ($tablet) {
         grid-column-gap: $spacing-x3;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
       }
-
-      @media ($desktop) {
-        @include wrapper-lg;
-        padding: 0 $spacing-x6;
-      }
     }
 
     .offers-item {
       align-items: center;
       color: $white;
-      // background-color: $greyDark;
 
       display: grid;
       height: 250px;

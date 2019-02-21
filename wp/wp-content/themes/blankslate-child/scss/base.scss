@@ -31,9 +31,15 @@ h1 {
 }
 
 .wrapper {
-  padding: 0 $spacing-x2;
+  padding: 0 $spacing-x3;
 
   @media ($tablet) {
+    @include wrapper-tablet;
+  }
+
+  @media ($desktop-lg) {
+    @include wrapper-lg;
+    padding: 0;
   }
 }
 

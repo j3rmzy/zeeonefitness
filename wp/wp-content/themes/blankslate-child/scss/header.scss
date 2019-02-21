@@ -43,14 +43,32 @@
   .wrapper {
     align-items: center;
     display: grid;
-    height: 300px;
+    padding-top: $spacing-x10;
+    padding-bottom: $spacing-x10;
 
-    @media ($tablet) {
-      height: 400px;
+    @media ($desktop-lg) {
+      @include wrapper-lg;
+    }
+  }
+
+  #featured-image {
+    position: relative;
+    margin-bottom: 0;
+
+    .wrapper {
+      align-items: center;
+      bottom: 0;
+      display: grid;
+      height: auto;
+      left: 0;
+      right: 0;
+      padding: 0 $spacing-x6;
+      position: absolute;
+      top: 0;
     }
 
-    @media ($desktop) {
-      @include wrapper-lg;
+    img {
+      height: auto;
     }
   }
 
@@ -68,7 +86,7 @@
         width: 430px;
       }
 
-      @media ($desktop) {
+      @media ($desktop-md) {
         font-size: 7.2rem;
       }
     }

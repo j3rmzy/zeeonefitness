@@ -16,26 +16,31 @@ $spacing-x3: $spacing * 3;
 $spacing-x4: $spacing * 4;
 $spacing-x5: $spacing * 5;
 $spacing-x6: $spacing * 6;
+$spacing-x7: $spacing * 7;
+$spacing-x8: $spacing * 8;
+$spacing-x9: $spacing * 9;
+$spacing-x10: $spacing * 10;
 
 $tablet: 'min-width: 768px';
-$desktop: 'min-width: 992px';
-$desktop-lg: 'min-width: 1024px';
-
-@mixin wrapper-md {
-  width: 768px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@mixin wrapper-lg {
-  width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-}
+$desktop-md: 'min-width: 992px';
+$desktop-lg: 'min-width: 1200px';
 
 @mixin img-responsive {
   display: block;
   height: 100%;
   min-width: 100%;
   width: 100%;
+}
+
+@mixin wrapper-tablet {
+  padding: 0 $spacing-x3;
+}
+
+@mixin wrapper-md {
+}
+
+@mixin wrapper-lg {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 }
