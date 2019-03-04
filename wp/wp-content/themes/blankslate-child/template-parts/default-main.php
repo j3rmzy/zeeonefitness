@@ -4,9 +4,8 @@
   </div>
 </header>
 <article id="default-page-main">
+  <? get_template_part('template-parts/default', 'featured-image'); ?>
   <div class="wrapper">
-    <? get_template_part('template-parts/default', 'featured-image'); ?>
-    
     <div class="content-wrapper">
       <div class="content">
         <? the_content(); ?>

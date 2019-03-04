@@ -19,11 +19,16 @@
 }
 
 #default-page-title {
-  background-color: $grey;
+  background-color: rgba($black, 0.5);
   color: $white;
   font-weight: 600;
+  position: absolute;
+  left: 0;
+  right: 0;
   padding: $spacing-x2 0;
   text-transform: uppercase;
+  text-align: center;
+
   
   h1 {
     font-size: 3.2rem;

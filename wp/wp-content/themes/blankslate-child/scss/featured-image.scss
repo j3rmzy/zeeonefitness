@@ -1,6 +1,11 @@
 #featured-image {
   margin-bottom: $spacing-x2;
 
+  @media ($desktop-md) {
+    max-height: 300px;
+    overflow: hidden;
+  }
+
   img {
     @include img-responsive;
   }

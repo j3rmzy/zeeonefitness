@@ -70,19 +70,25 @@
       font-weight: 600;
       text-transform: uppercase;
 
+      p {
+        height: 100%;
+        width: 100%;
+      }
+
       a {
-        align-items: center;
         background: linear-gradient(
           rgba(0, 0, 0, 0.7),
           rgba(0, 0, 0, 0.7)
         ),
         url('/wp-content/uploads/2019/02/banner-example.jpg')  no-repeat center center;
-  
-        display: grid;
-        color: $white;
-        justify-items: center;
         height: 100%;
         width: 100%;
+        padding: $spacing-x2;
+        align-items: center;
+        display: grid;
+        justify-items: center;
+        color: $white;
+        font-size: 2.6rem;
 
         &:hover {
           text-decoration: none;
@@ -125,6 +131,8 @@
       @media ($tablet) {
         @include wrapper-md;
         width: 600px;
+        margin: 0 auto;
+        padding: 0;
       }
     }
   }

@@ -46,11 +46,4 @@ h1 {
 #main {
   display: grid;
   grid-template-rows: auto 1fr;
-  grid-row-gap: $spacing-x2;
-}
-
-.home {
-  #main {
-    grid-row-gap: 0;
-  }
 }
