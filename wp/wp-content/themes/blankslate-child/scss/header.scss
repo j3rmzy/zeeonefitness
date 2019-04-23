@@ -6,10 +6,140 @@
     justify-content: center;
     padding: $spacing-x2 0;
 
+    h1 {
+      font-size: 1.6rem;
+    }
+
     a {
       color: $white;
       text-transform: uppercase;
       text-decoration: none;
+    }
+  }
+}
+
+#default-page-title {
+  background-color: rgba($black, 0.5);
+  color: $white;
+  font-weight: 600;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: $spacing-x2 0;
+  text-transform: uppercase;
+  text-align: center;
+
+  
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  .wrapper {
+    @media ($desktop-lg) {
+      @include wrapper-lg;
+    }
+  }
+}
+
+#home-header {
+  color: $white;
+
+  .wrapper {
+    align-items: center;
+    display: grid;
+    padding-top: $spacing-x10;
+    padding-bottom: $spacing-x10;
+
+    @media ($desktop-lg) {
+      @include wrapper-lg;
+    }
+  }
+
+  
+  #featured-header {
+    position: relative;
+    margin-bottom: 0;
+    
+    #home-header-image {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      background-size: cover;  
+    }
+
+    #home-header-video {
+      overflow: hidden;
+      position: relative;
+
+      .wrapper {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      
+      #wp-custom-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+
+      #wp-custom-header-video {
+        height: 100%;
+        width: 100%;
+      }
+
+      #wp-custom-header-video-button {
+        display: none;
+      }
+
+      #home-title {
+        padding: $spacing-x2 0;
+        position: relative;
+        z-index: 10;
+
+        @media ($tablet) {
+          padding: $spacing-x6 0;
+        }
+
+        @media ($desktop-md) {
+          padding: $spacing-x8;
+        }
+
+        @media ($desktop-lg) {
+          padding: $spacing-x10;
+        }
+      }
+    }
+  }
+
+  #home-title {
+    text-transform: uppercase;
+    
+    .slogan {
+      font-size: 4.2rem;
+      font-weight: 900;
+      line-height: 0.8;
+      width: 290px;
+
+      @media ($tablet) {
+        font-size: 6.2rem;
+        width: 430px;
+      }
+
+      @media ($desktop-md) {
+        font-size: 7.2rem;
+      }
+    }
+
+    h1 {
+      color: $yellow;
+      font-size: 2.4rem;
+      font-weight: 300;
+      line-height: 1;
+
+      @media ($tablet) {
+        font-size: 3rem;
+      }
     }
   }
 }

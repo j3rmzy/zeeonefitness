@@ -1,0 +1,55 @@
+#coming-soon {
+  align-items: center;
+  background: transparent url(http://localhost:8000/wp-content/uploads/2019/04/main-bg.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+
+  .main-content {
+    position: relative;
+    top: 70px;
+  }
+
+  .title {
+    color: $white;
+    line-height: 1;
+    margin-bottom: $spacing-x2;
+    text-align: center;
+  
+    .slogan {
+      font-size: 4rem;
+      font-weight: 900;
+      text-transform: uppercase;
+
+      @media ($tablet) {
+        font-size: 5rem;
+      }
+
+      @media ($desktop-md) {
+        font-size: 7.2rem;
+      }
+    }
+
+    h1 {
+      font-size: 3rem;
+
+      @media ($tablet) {
+        font-size: 4rem;
+      }
+
+      .yel {
+        color: $yellow;
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+
+      svg {
+        fill: $yellow;
+      }
+  }
+}

@@ -14,3 +14,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
 @import './header';
 @import './footer';
+@import './default';
+@import './sidebar';
+
+@import './featured-image';
+@import './section';
+@import './contact';
+
+@import './buttons';
+
+// Page Specific
+@import './pages/coming-soon.scss';

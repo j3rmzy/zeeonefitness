@@ -1,17 +1,19 @@
 html,
 body {
   box-sizing: border-box;
+  font-size: 10px;
   padding: 0;
   margin: 0;
+  min-height: 100vh;
 }
 
 body {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.3rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   font-family: 'Montserrat', sans-serif;
-  display: flex;
-  flex-direction: column;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3;
 }
 
 a:link,
@@ -24,8 +26,24 @@ a:hover {
   text-decoration: underline;
 }
 
-img {
-  max-width: 100%;
-  width: 100%;
-  display: block;
+h1 {
+  font-size: 4.6rem;
+}
+
+.wrapper {
+  padding: 0 $spacing-x3;
+
+  @media ($tablet) {
+    @include wrapper-tablet;
+  }
+
+  @media ($desktop-lg) {
+    @include wrapper-lg;
+    padding: 0;
+  }
+}
+
+#main {
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
