@@ -37,10 +37,9 @@ $desktop-lg: 'min-width: 1200px';
 }
 
 @mixin wrapper-md {
+  width: 756px;
 }
 
 @mixin wrapper-lg {
   width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
 }

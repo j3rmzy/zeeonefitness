@@ -9,14 +9,14 @@ get_header('home'); ?>
 <header id="home-header">
     <? get_template_part('template-parts/home', 'custom-header'); ?>
 </header>
-<section id="main">
+<main id="content">
   <?php 
     // start the loop
     while (have_posts()) : the_post();
       get_template_part('template-parts/home','main');
     endwhile;
   ?>
-</section>
+</main>
 
 <?php 
 get_footer(); ?>

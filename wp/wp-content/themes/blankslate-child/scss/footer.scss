@@ -13,8 +13,8 @@
       margin: 0 $spacing;
       width: 35px;
 
-      img {
-        @include img-responsive;
+      svg {
+        fill: $yellow;
       }
     }
   }

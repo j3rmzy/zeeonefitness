@@ -35,10 +35,12 @@ h1 {
 
   @media ($tablet) {
     @include wrapper-tablet;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  @media ($desktop-lg) {
-    @include wrapper-lg;
+  @media ($desktop-md) {
+    @include wrapper-md;
     padding: 0;
   }
 }
