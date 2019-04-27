@@ -21,7 +21,7 @@
 #default-page-title {
   background-color: rgba($black, 0.5);
   color: $white;
-  font-weight: 600;
+  font-weight: 700;
   position: absolute;
   left: 0;
   right: 0;
@@ -61,9 +61,11 @@
     margin-bottom: 0;
     
     #home-header-image {
+      background-color: rgba(0, 0, 0, 0.5);
+      background-blend-mode: multiply;  
       background-position: center center;
       background-repeat: no-repeat;
-      background-color: transparent;
+      // background-color: transparent;
       background-size: cover;  
     }
 
@@ -134,7 +136,7 @@
     h1 {
       color: $yellow;
       font-size: 2.4rem;
-      font-weight: 300;
+      font-weight: 600;
       line-height: 1;
 
       @media ($tablet) {

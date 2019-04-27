@@ -11,7 +11,7 @@
 /**
 * Variables
 */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900");
 html,
 body {
   box-sizing: border-box;
@@ -102,7 +102,7 @@ h1 {
 #default-page-title {
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 700;
   position: absolute;
   left: 0;
   right: 0;
@@ -129,9 +129,10 @@ h1 {
     position: relative;
     margin-bottom: 0; }
     #home-header #featured-header #home-header-image {
+      background-color: rgba(0, 0, 0, 0.5);
+      background-blend-mode: multiply;
       background-position: center center;
       background-repeat: no-repeat;
-      background-color: transparent;
       background-size: cover; }
     #home-header #featured-header #home-header-video {
       overflow: hidden;
@@ -179,7 +180,7 @@ h1 {
     #home-header #home-title h1 {
       color: #ffba00;
       font-size: 2.4rem;
-      font-weight: 300;
+      font-weight: 600;
       line-height: 1; }
       @media (min-width: 768px) {
         #home-header #home-title h1 {
@@ -270,7 +271,7 @@ h1 {
     width: 100%; }
 
 .row {
-  padding: 24px 0; }
+  padding: 32px 0; }
   @media (min-width: 768px) {
     .row {
       padding: 40px 0; } }
@@ -287,9 +288,9 @@ h1 {
         flex-direction: row;
         justify-content: space-between; } }
     .row .block-inner .block {
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       align-items: center;
       background-color: #f4f4f4;
-      box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.25);
       display: flex;
       height: 250px;
       font-size: 2.4rem;
@@ -303,21 +304,35 @@ h1 {
           font-size: 2rem; } }
       .row .block-inner .block:last-child {
         margin-bottom: 0; }
+      .row .block-inner .block a {
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: multiply;
+        transition: background-color 0.5s ease-in-out; }
+        .row .block-inner .block a:hover {
+          text-decoration: none;
+          background-color: rgba(0, 0, 0, 0.35); }
   .row.home .wrapper {
     padding: 0; }
     @media (min-width: 768px) {
       .row.home .wrapper {
         padding: 0 16px; } }
+    @media (min-width: 992px) {
+      .row.home .wrapper {
+        padding: 0; } }
     .row.home .wrapper .block {
       color: #ffffff;
-      margin-bottom: 0;
-      background: rgba(0, 0, 0, 0.5) url("http://localhost:8000/wp-content/uploads/2019/04/banner-example.jpg") no-repeat center center;
-      background-blend-mode: multiply; }
+      background: transparent url("http://localhost:8000/wp-content/uploads/2019/04/banner-example.jpg") no-repeat center center;
+      margin-bottom: 0; }
       .row.home .wrapper .block.price {
         background-image: url("http://localhost:8000/wp-content/uploads/2019/04/banner-example.jpg"); }
   .row.about {
-    background-color: #333333;
-    color: #ffffff;
+    background-color: #f4f4f4;
     display: flex;
     flex-direction: column; }
     @media (min-width: 768px) {
@@ -338,6 +353,8 @@ h1 {
       .row.ethos .img-wrapper {
         flex: 1 0 50%;
         margin-right: 16px; } }
+    .row.ethos .img-wrapper img {
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); }
 
 .contact form {
   display: flex;
@@ -461,9 +478,9 @@ h1 {
     font-weight: 600;
     text-transform: uppercase; }
   .testimonial img {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
     border-radius: 50%;
     border: 3px solid #ffba00;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
     height: 100px;
     margin-bottom: 24px;
     width: 100px; }

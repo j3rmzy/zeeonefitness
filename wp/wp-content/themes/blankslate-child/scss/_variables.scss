@@ -44,3 +44,7 @@ $desktop-lg: 'min-width: 1200px';
 @mixin wrapper-lg {
   width: 1024px;
 }
+
+@mixin box-shadow {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
