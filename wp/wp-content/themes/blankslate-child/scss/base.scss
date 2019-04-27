@@ -53,6 +53,10 @@ h1 {
     @include wrapper-md;
     padding: 0;
   }
+
+  @media ($desktop-lg) {
+    @include wrapper-lg;
+  }
 }
 
 #main {

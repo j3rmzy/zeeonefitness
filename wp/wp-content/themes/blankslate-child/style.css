@@ -58,6 +58,9 @@ h1 {
     .wrapper {
       width: 756px;
       padding: 0; } }
+  @media (min-width: 1200px) {
+    .wrapper {
+      width: 1024px; } }
 
 #main {
   display: grid;
@@ -295,14 +298,17 @@ h1 {
         margin-left: auto;
         margin-right: auto;
         width: 500px; } }
+    @media (min-width: 992px) {
+      .row.about .text-wrapper {
+        width: 650px; } }
   @media (min-width: 768px) {
-    .row.mantra .content-inner {
+    .row.ethos .content-inner {
       display: flex;
       flex-direction: row; } }
-  .row.mantra .img-wrapper {
+  .row.ethos .img-wrapper {
     margin-bottom: 24px; }
     @media (min-width: 768px) {
-      .row.mantra .img-wrapper {
+      .row.ethos .img-wrapper {
         flex: 1 0 50%;
         margin-right: 16px; } }
 

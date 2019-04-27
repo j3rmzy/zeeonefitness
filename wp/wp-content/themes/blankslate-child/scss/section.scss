@@ -78,10 +78,14 @@
         margin-right: auto;
         width: 500px;
       }
+
+      @media ($desktop-md) {
+        width: 650px;
+      }
     }
   }
 
-  &.mantra {
+  &.ethos {
     .content-inner {
       @media ($tablet) {
         display: flex;
