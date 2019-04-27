@@ -212,13 +212,20 @@ h1 {
   background: rgba(0, 0, 0, 0.5) url("http://localhost:8000/wp-content/uploads/2019/04/banner-example.jpg") no-repeat center top;
   background-blend-mode: multiply;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
   left: auto;
+  line-height: 1.2;
   position: relative;
   right: auto; }
+  @media (min-width: 768px) {
+    #default-page-title {
+      height: 30vh; } }
 
 #default-page-main {
-  flex-grow: 1;
-  margin-bottom: 16px; }
+  flex-grow: 1; }
   @media (min-width: 1200px) {
     #default-page-main .wrapper {
       width: 1024px; } }
@@ -438,6 +445,33 @@ h1 {
     @media (min-width: 768px) {
       .price-package-card .btn {
         font-size: 1.4rem; } }
+
+.testimonial {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  .testimonial .description {
+    margin-bottom: 24px; }
+    @media (min-width: 768px) {
+      .testimonial .description {
+        width: 500px; } }
+  .testimonial .author {
+    color: #333333;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .testimonial img {
+    border-radius: 50%;
+    border: 3px solid #ffba00;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    height: 100px;
+    margin-bottom: 24px;
+    width: 100px; }
+
+.testimonials {
+  padding: 32px; }
+  .testimonials:nth-child(even) {
+    background-color: #cccccc; }
 
 #coming-soon {
   align-items: center;

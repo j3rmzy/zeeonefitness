@@ -2,14 +2,22 @@
   background: rgba(0, 0, 0, 0.5) url('http://localhost:8000/wp-content/uploads/2019/04/banner-example.jpg') no-repeat center top;
   background-blend-mode: multiply;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
   left: auto;
+  line-height: 1.2;
   position: relative;
   right: auto;
+
+  @media ($tablet) {
+    height: 30vh;
+  }
 }
 
 #default-page-main {
   flex-grow: 1;
-  margin-bottom: $spacing-x2;
 
   .wrapper {
     @media ($desktop-lg) {
