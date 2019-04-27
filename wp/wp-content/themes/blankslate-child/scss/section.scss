@@ -1,103 +1,45 @@
-.section {
-  padding: $spacing-x6 0;
+.row {
+  padding: $spacing-x3 0;
 
-  @media ($desktop-lg) {
-    padding: $spacing-x6 0;
+  @media ($tablet) {
+    padding: $spacing-x5 0;
   }
 
-  h2 {
-    font-size: 2.6rem;
+  .heading1 {
+    font-size: 2.4rem;
     font-weight: 600;
-    margin-bottom: $spacing-x3;
     text-align: center;
     text-transform: uppercase;
   }
 
-  h3 {
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: $spacing-x2;
-  }
+  .block-inner {
+    display: flex;
+    flex-direction: column;
 
-  .wrapper {
-    @media ($desktop-lg) {
-      @include wrapper-lg;
-    }
-  }
-
-  .section-wrapper {
-    padding: 0 $spacing-x3;
 
     @media ($tablet) {
-      @include wrapper-tablet;
+      flex-direction: row;
+      justify-content: space-between;
     }
 
-    @media ($desktop-lg) {
-      @include wrapper-lg;
-      padding: 0;
-    }
-  }
-  
-  @media ($tablet) {
-    .section-3col {
-      flex-basis: 30%;
-    }
-  }
-
-  &.offers {
-    color: $greyDark;
-    text-align: center;
-
-    .section-wrapper {
-      display: grid;
-      grid-template-rows: repeat(3, 1fr);
-      grid-row-gap: $spacing-x3;
-  
-      @media ($tablet) {
-        grid-column-gap: $spacing-x3;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-      }
-    }
-
-    .offers-item {
+    .block {
       align-items: center;
-      color: $white;
-
-      display: grid;
+      background-color: $greyLight;
+      display: flex;
       height: 250px;
-      justify-items: center;
+      font-size: 2.4rem;
       font-weight: 600;
+      justify-content: center;
+      margin-bottom: $spacing-x2;
       text-transform: uppercase;
 
-      p {
-        height: 100%;
-        width: 100%;
+      @media ($tablet) {
+        flex-basis: 32.333%;
+        font-size: 2rem;
       }
 
-      a {
-        background: linear-gradient(
-          rgba(0, 0, 0, 0.7),
-          rgba(0, 0, 0, 0.7)
-        ),
-        url('/wp-content/uploads/2019/02/banner-example.jpg')  no-repeat center center;
-        height: 100%;
-        width: 100%;
-        padding: $spacing-x2;
-        align-items: center;
-        display: grid;
-        justify-items: center;
-        color: $white;
-        font-size: 2.6rem;
-
-        &:hover {
-          text-decoration: none;
-          background: linear-gradient(
-            rgba(0, 0, 0, 0.9),
-            rgba(0, 0, 0, 0.9)
-          ),
-          url('/wp-content/uploads/2019/02/banner-example.jpg')  no-repeat center center;
-        }
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }
@@ -105,34 +47,32 @@
   &.about {
     background-color: $greyDark;
     color: $white;
+    display: flex;
+    flex-direction: column;
 
-    .section-wrapper {
-      display: grid;
-      text-align: center;
-
+    .text-wrapper {
       @media ($tablet) {
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
         width: 500px;
       }
     }
   }
 
-  &.contact {
-    background-color: $black;
-    color: $white;
-
-    .form-block {
-      .wpcf7-form-control-wrap {
-        width: 100%;
+  &.mantra {
+    .content-inner {
+      @media ($tablet) {
+        display: flex;
+        flex-direction: row;
       }
     }
 
-    .section-wrapper {
+    .img-wrapper {
+      margin-bottom: $spacing-x3;
+
       @media ($tablet) {
-        @include wrapper-md;
-        width: 600px;
-        margin: 0 auto;
-        padding: 0;
+        flex: 1 0 50%;
+        margin-right: $spacing-x2;
       }
     }
   }
