@@ -66,12 +66,25 @@ h1 {
   display: grid;
   grid-template-rows: auto 1fr; }
 
+.heading1,
+.heading2,
+.heading3 {
+  font-weight: 600;
+  text-transform: uppercase; }
+
 .heading1 {
   font-size: 3.2rem;
   margin-bottom: 16px; }
   @media (min-width: 992px) {
     .heading1 {
       margin-bottom: 24px; } }
+
+.heading2 {
+  font-size: 3rem; }
+
+.heading3 {
+  font-size: 2.7rem;
+  margin-bottom: 16px; }
 
 #header #site-title {
   align-items: center;
@@ -195,6 +208,14 @@ h1 {
     #footer #copyright a {
       color: #f4f4f4; }
 
+#default-page-title {
+  background: rgba(0, 0, 0, 0.5) url("http://localhost:8000/wp-content/uploads/2019/04/banner-example.jpg") no-repeat center top;
+  background-blend-mode: multiply;
+  background-size: cover;
+  left: auto;
+  position: relative;
+  right: auto; }
+
 #default-page-main {
   flex-grow: 1;
   margin-bottom: 16px; }
@@ -209,8 +230,7 @@ h1 {
         flex-direction: row; } }
   #default-page-main .content {
     flex-grow: 1;
-    margin-bottom: 16px;
-    margin-right: 16px; }
+    margin-bottom: 16px; }
 
 #sidebar {
   background-color: #000000;
@@ -362,6 +382,62 @@ h1 {
   text-transform: uppercase; }
   .btn:hover {
     background-color: #ffba01; }
+
+.price-package .heading3 {
+  font-size: 2.2rem;
+  text-align: center; }
+  .price-package .heading3 span {
+    color: #ffba00;
+    display: block; }
+
+.price-package-wrapper {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .price-package-wrapper {
+      flex-direction: row;
+      justify-content: space-between; } }
+
+.price-package-card {
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 12px 12px 60px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-basis: 24%;
+  flex-direction: column;
+  padding: 40px 16px;
+  margin-bottom: 16px; }
+  .price-package-card .heading3 {
+    flex-grow: 1;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase; }
+    @media (min-width: 768px) {
+      .price-package-card .heading3 {
+        font-size: 1.8rem; } }
+  .price-package-card .price {
+    border-bottom: 5px solid #cccccc;
+    font-size: 4rem;
+    margin-bottom: 16px; }
+  .price-package-card .plan {
+    flex-grow: 1;
+    margin-bottom: 16px;
+    text-align: center;
+    width: 100%; }
+    .price-package-card .plan .plan-item {
+      padding: 8px 0; }
+      @media (min-width: 768px) {
+        .price-package-card .plan .plan-item {
+          border-bottom: 1px solid #cccccc; } }
+      .price-package-card .plan .plan-item:last-child {
+        border-bottom: none; }
+  .price-package-card .btn {
+    font-size: 1.7rem;
+    font-weight: 600; }
+    @media (min-width: 768px) {
+      .price-package-card .btn {
+        font-size: 1.4rem; } }
 
 #coming-soon {
   align-items: center;

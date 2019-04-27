@@ -64,6 +64,13 @@ h1 {
   grid-template-rows: auto 1fr;
 }
 
+.heading1,
+.heading2,
+.heading3 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .heading1 {
   font-size: 3.2rem;
   margin-bottom: $spacing-x2;
@@ -73,6 +80,11 @@ h1 {
   }
 };
 
-.h2 {};
+.heading2 {
+  font-size: 3rem;
+};
 
-.h3 {}
+.heading3 {
+  font-size: 2.7rem;
+  margin-bottom: $spacing-x2;
+};

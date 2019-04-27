@@ -4,16 +4,12 @@
   </div>
 </header>
 <article id="default-page-main">
-  <? get_template_part('template-parts/default', 'featured-image'); ?>
-  <div class="wrapper">
-    <div class="content-wrapper">
-      <div class="content">
-        <? the_content(); ?>
-      </div>
+  <?php if (has_post_thumbnail()) : ?>
+    <? get_template_part('template-parts/default', 'featured-image'); ?>
+  <? endif; ?>
+    <? the_content(); ?>
 
-      <?php if (is_active_sidebar('custom-side-bar')) : ?>
-        <? get_template_part('template-parts/default', 'sidebar'); ?>
-      <?php endif; ?>
-    </div>
-  </div>
+    <?php if (is_active_sidebar('custom-side-bar')) : ?>
+      <? get_template_part('template-parts/default', 'sidebar'); ?>
+    <?php endif; ?>
 </article>

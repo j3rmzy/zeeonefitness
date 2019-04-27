@@ -1,0 +1,78 @@
+.price-package {
+  .heading3 {
+    font-size: 2.2rem;
+    text-align: center;
+
+    span {
+      color: $yellow;
+      display: block;
+    }
+  }
+}
+
+.price-package-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media ($tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.price-package-card {
+  align-items: center;
+  background-color: $white;
+  box-shadow: 12px 12px 60px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-basis: 24%;
+  flex-direction: column;
+  padding: $spacing-x5 $spacing-x2;
+  margin-bottom: $spacing-x2;
+
+  .heading3 {
+    flex-grow: 1;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media ($tablet) {
+      font-size: 1.8rem;
+    }
+  }
+
+  .price {
+    border-bottom: 5px solid $grey200;
+    font-size: 4rem;
+    margin-bottom: $spacing-x2;
+  }
+
+  .plan {
+    flex-grow: 1;
+    margin-bottom: $spacing-x2;
+    text-align: center;
+    width: 100%;
+
+    .plan-item {
+      padding: $spacing 0;
+      
+      @media ($tablet) {
+        border-bottom: 1px solid $grey200;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .btn {
+    font-size: 1.7rem;
+    font-weight: 600;
+
+    @media ($tablet) {
+      font-size: 1.4rem;
+    }
+  }
+}
