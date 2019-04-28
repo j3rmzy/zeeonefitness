@@ -92,9 +92,14 @@ h1 {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    height: 52px;
     justify-content: center;
-    padding: 16px 0 8px;
-    text-align: center; }
+    padding: 16px 0;
+    overflow: hidden;
+    text-align: center;
+    transition: height 0.5s ease-in-out; }
+    #header #site-title.open {
+      height: 148px; }
     @media (min-width: 768px) {
       #header #site-title {
         padding: 0 16px;
@@ -301,7 +306,7 @@ h1 {
 .menu-main-menu-container {
   display: flex;
   flex-direction: column;
-  padding-top: 16px;
+  padding-top: 8px;
   text-align: center;
   text-transform: uppercase; }
   @media (min-width: 768px) {
@@ -496,6 +501,7 @@ h1 {
   .mobile-menu button {
     background-color: transparent;
     border: none;
+    cursor: pointer;
     line-height: 0.5;
     padding: 0;
     width: 100%; }

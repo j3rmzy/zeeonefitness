@@ -5,9 +5,16 @@
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    height: 52px;
     justify-content: center;
-    padding: $spacing-x2 0 $spacing;
+    padding: $spacing-x2 0;
+    overflow: hidden;
     text-align: center;
+    transition: height 0.5s ease-in-out;
+
+    &.open {
+      height: 148px;
+    }
 
     @media ($tablet) {
       @include wrapper-tablet;
