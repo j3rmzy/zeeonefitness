@@ -37,11 +37,17 @@
 
     a {
       color: $white;
+
+      &:hover {
+        color: $yellow;
+      }
     }
 
     &.current_page_item {
       a {
-        border-bottom: 2px solid $yellow;
+        @media ($tablet) {
+          border-bottom: 2px solid $yellow;
+        }
         color: $yellow;
         padding-bottom: $spacing-half;
       }

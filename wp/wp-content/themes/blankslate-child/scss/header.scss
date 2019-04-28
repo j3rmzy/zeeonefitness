@@ -6,7 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: $spacing-x2 0;
+    padding: $spacing-x2 0 $spacing;
     text-align: center;
 
     @media ($tablet) {

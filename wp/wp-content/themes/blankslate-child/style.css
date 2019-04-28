@@ -93,7 +93,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 16px 0;
+    padding: 16px 0 8px;
     text-align: center; }
     @media (min-width: 768px) {
       #header #site-title {
@@ -326,10 +326,14 @@ h1 {
     padding: 4px 0; }
     .menu-main-menu-container .menu-item a {
       color: #ffffff; }
+      .menu-main-menu-container .menu-item a:hover {
+        color: #ffba00; }
     .menu-main-menu-container .menu-item.current_page_item a {
-      border-bottom: 2px solid #ffba00;
       color: #ffba00;
       padding-bottom: 4px; }
+      @media (min-width: 768px) {
+        .menu-main-menu-container .menu-item.current_page_item a {
+          border-bottom: 2px solid #ffba00; } }
 
 #featured-image {
   margin-bottom: 16px; }
