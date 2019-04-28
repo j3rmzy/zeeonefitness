@@ -210,7 +210,9 @@ h1 {
       color: #f4f4f4; }
 
 #default-page-title {
-  background: rgba(0, 0, 0, 0.5) url("http://localhost:8000/wp-content/uploads/2019/04/banner-example.jpg") no-repeat center top;
+  background-color: rgba(0, 0, 0, 0.65);
+  background-repeat: no-repeat;
+  background-position: center center;
   background-blend-mode: multiply;
   background-size: cover;
   display: flex;
