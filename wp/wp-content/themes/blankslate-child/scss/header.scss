@@ -18,14 +18,11 @@
       padding-bottom: $spacing-x2;
     }
 
-
-    
     h1 {
       font-size: 1.6rem;
     }
     
     a {
-      color: $white;
       text-transform: uppercase;
       text-decoration: none;
     }
@@ -33,6 +30,10 @@
     .site-title-inner {
       position: relative;
       width: 100%;
+
+      a {
+        color: $white;
+      }
 
       @media ($tablet) {
         flex-shrink: 0;

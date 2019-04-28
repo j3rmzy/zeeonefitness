@@ -105,12 +105,13 @@ h1 {
     #header #site-title h1 {
       font-size: 1.6rem; }
     #header #site-title a {
-      color: #ffffff;
       text-transform: uppercase;
       text-decoration: none; }
     #header #site-title .site-title-inner {
       position: relative;
       width: 100%; }
+      #header #site-title .site-title-inner a {
+        color: #ffffff; }
       @media (min-width: 768px) {
         #header #site-title .site-title-inner {
           flex-shrink: 0;
@@ -325,6 +326,10 @@ h1 {
     padding: 4px 0; }
     .menu-main-menu-container .menu-item a {
       color: #ffffff; }
+    .menu-main-menu-container .menu-item.current_page_item a {
+      border-bottom: 2px solid #ffba00;
+      color: #ffba00;
+      padding-bottom: 4px; }
 
 #featured-image {
   margin-bottom: 16px; }

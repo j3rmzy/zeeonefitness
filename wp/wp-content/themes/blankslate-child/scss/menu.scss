@@ -38,5 +38,13 @@
     a {
       color: $white;
     }
+
+    &.current_page_item {
+      a {
+        border-bottom: 2px solid $yellow;
+        color: $yellow;
+        padding-bottom: $spacing-half;
+      }
+    }
   }
 }
