@@ -1,19 +1,45 @@
 #header {
+  background-color: $black;
+
   #site-title {
     align-items: center;
-    background-color: $black;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: $spacing-x2 0;
+    text-align: center;
 
+    @media ($tablet) {
+      @include wrapper-tablet;
+
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      padding-top: $spacing-x2;
+      padding-bottom: $spacing-x2;
+    }
+
+
+    
     h1 {
       font-size: 1.6rem;
     }
-
+    
     a {
       color: $white;
       text-transform: uppercase;
       text-decoration: none;
+    }
+
+    .site-title-inner {
+      position: relative;
+      width: 100%;
+
+      @media ($tablet) {
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: auto;
+        width: auto;
+      }
     }
   }
 }
@@ -24,6 +50,7 @@
   font-weight: 700;
   position: absolute;
   left: 0;
+  justify-content: center;
   right: 0;
   padding: $spacing-x2 0;
   text-transform: uppercase;

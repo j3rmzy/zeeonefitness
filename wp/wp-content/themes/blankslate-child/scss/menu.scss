@@ -1,0 +1,42 @@
+.menu-main-menu-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: $spacing-x2;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media ($tablet) {
+    background-color: transparent;
+    display: block;
+    padding: $spacing-half 0;
+  }
+
+  .menu {
+    font-weight: 600;
+
+    @media ($tablet) {
+      display: flex;
+      flex-direction: row;
+    }
+
+    li {
+      margin-top: 0;
+
+      @media ($tablet) {
+        margin: 0 $spacing-x2;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .menu-item {
+    padding: $spacing-half 0;
+
+    a {
+      color: $white;
+    }
+  }
+}

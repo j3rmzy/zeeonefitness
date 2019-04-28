@@ -8,8 +8,18 @@
     <body <?php body_class(); ?>>
       <header id="header">
         <div id="site-title">
-          <?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; } ?>
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>
-          <?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>'; } ?>
+          <div class='site-title-inner'>
+            <?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; } ?>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>
+            <?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>'; } ?>
+            <div class='mobile-menu'>
+              <button class='burger-btn-js'>
+                <div></div>
+                <div></div>
+                <div></div>
+              </button>
+            </div>
+          </div>
+          <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
         </div>
       </header>
