@@ -56,7 +56,7 @@ h1 {
       margin-right: auto; } }
   @media (min-width: 992px) {
     .wrapper {
-      width: 756px;
+      width: 900px;
       padding: 0; } }
   @media (min-width: 1200px) {
     .wrapper {
@@ -268,7 +268,7 @@ h1 {
         padding: 0 16px; } }
     @media (min-width: 992px) {
       #default-page-title .wrapper {
-        width: 756px; } }
+        width: 900px; } }
 
 #default-page-main {
   flex-grow: 1; }
@@ -537,7 +537,6 @@ h1 {
   padding: 40px 16px;
   margin-bottom: 16px; }
   .price-package-card .heading3 {
-    flex-grow: 1;
     font-size: 2.2rem;
     font-weight: 600;
     text-align: center;
@@ -545,10 +544,20 @@ h1 {
     @media (min-width: 768px) {
       .price-package-card .heading3 {
         font-size: 1.8rem; } }
-  .price-package-card .price {
+  .price-package-card .price-details {
     border-bottom: 5px solid #cccccc;
+    margin-bottom: 8px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .price-package-card .price-details {
+        min-height: 95px; } }
+    .price-package-card .price-details small {
+      display: inline-block;
+      font-size: 1.6rem;
+      margin-bottom: 8px; }
+  .price-package-card .price {
     font-size: 4rem;
-    margin-bottom: 16px; }
+    margin-bottom: 8px; }
   .price-package-card .plan {
     flex-grow: 1;
     margin-bottom: 16px;
