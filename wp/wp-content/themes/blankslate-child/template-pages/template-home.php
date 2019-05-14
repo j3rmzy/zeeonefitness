@@ -7,7 +7,8 @@
 get_header('home'); ?>
 
 <header id="home-header">
-    <? get_template_part('template-parts/home', 'custom-header'); ?>
+    <?php get_template_part('template-parts/default', 'menu'); ?>
+    <?php get_template_part('template-parts/home', 'custom-header'); ?>
 </header>
 <main id="content">
   <?php 

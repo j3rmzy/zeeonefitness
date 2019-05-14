@@ -6,14 +6,6 @@
       <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
-      <header id="header">
-        <div id="site-title">
-          <div class='site-title-inner'>
-            <?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; } ?>
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>
-            <?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>'; } ?>
-            <?php get_template_part('template-parts/header','mobile-menu'); ?>
-          </div>
-          <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-        </div>
-      </header>
+    <header id="header">
+        <?php get_template_part('template-parts/default', 'menu'); ?>
+    </header>

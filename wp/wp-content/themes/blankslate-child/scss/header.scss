@@ -1,55 +1,5 @@
 #header {
   background-color: $black;
-
-  #site-title {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    height: 52px;
-    justify-content: center;
-    padding: $spacing-x2 0;
-    overflow: hidden;
-    text-align: center;
-    transition: height 0.5s ease-in-out;
-
-    &.open {
-      height: 148px;
-    }
-
-    @media ($tablet) {
-      @include wrapper-tablet;
-
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      padding-top: $spacing-x2;
-      padding-bottom: $spacing-x2;
-    }
-
-    h1 {
-      font-size: 1.6rem;
-    }
-    
-    a {
-      text-transform: uppercase;
-      text-decoration: none;
-    }
-
-    .site-title-inner {
-      position: relative;
-      width: 100%;
-
-      a {
-        color: $white;
-      }
-
-      @media ($tablet) {
-        flex-shrink: 0;
-        flex-grow: 0;
-        flex-basis: auto;
-        width: auto;
-      }
-    }
-  }
 }
 
 #default-page-title {
@@ -77,7 +27,13 @@
 }
 
 #home-header {
+  border-bottom: $spacing-x2 solid $yellow;
   color: $white;
+  position: relative;
+
+  @media ($tablet) {
+    border-bottom-width: $spacing;
+  }
 
   .wrapper {
     align-items: center;
@@ -98,7 +54,7 @@
     #home-header-image {
       background-color: rgba(0, 0, 0, 0.5);
       background-blend-mode: multiply;  
-      background-position: center center;
+      background-position: center top 40%;
       background-repeat: no-repeat;
       background-size: cover;  
     }
@@ -138,7 +94,7 @@
         }
 
         @media ($desktop-md) {
-          padding: $spacing-x8;
+          padding: $spacing+-x8;
         }
 
         @media ($desktop-lg) {

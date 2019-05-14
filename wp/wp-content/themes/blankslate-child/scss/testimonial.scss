@@ -31,7 +31,11 @@
 .testimonials {
   padding: $spacing-x4;
 
+  &:nth-child(odd) {
+    background-color: $white;
+  }
+
   &:nth-child(even) {
-    background-color: $grey200;
+    background-color: $grey100;
   }
 }

@@ -3,20 +3,24 @@
   border: none;
   color: $black;
   cursor: pointer;
-  font-size: 1.2rem;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 600;
   padding: $spacing;
   text-transform: uppercase;
-
+  transition: background-color 0.25s ease-in-out;
+  
   &:hover {
-    background-color: lighten($yellow, 0.2);
+    background-color: $black;
+    color: $yellow;
+    text-decoration: none;
   }
 }
 
 .mobile-menu {
   line-height: 0;
   position: absolute;
-  right: $spacing;
-  top: 0;
+  right: $spacing-x2;
   width: 25px;
 
   @media ($tablet) {

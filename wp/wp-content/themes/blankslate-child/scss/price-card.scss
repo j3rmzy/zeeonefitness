@@ -70,10 +70,7 @@
 
     .plan-item {
       padding: $spacing 0;
-      
-      @media ($tablet) {
-        border-bottom: 1px solid $grey200;
-      }
+      border-bottom: 1px solid $grey200;
 
       &:last-child {
         border-bottom: none;

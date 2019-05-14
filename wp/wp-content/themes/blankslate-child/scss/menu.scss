@@ -1,56 +1,149 @@
-.menu-main-menu-container {
-  display: flex;
-  flex-direction: column;
-  padding-top: $spacing;
-  text-align: center;
-  text-transform: uppercase;
-
+#main-menu {
+  background-color: $black;
+  
   @media ($tablet) {
-    background-color: transparent;
-    display: block;
-    padding: $spacing-half 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
   }
-
-  .menu {
-    font-weight: 600;
-
+  
+  .menu-top {
+    display: flex;
+    padding: $spacing-x2;
+    position: relative;
+    
     @media ($tablet) {
-      display: flex;
-      flex-direction: row;
+      padding: $spacing-x2;
     }
 
-    li {
-      margin-top: 0;
-
-      @media ($tablet) {
-        margin: 0 $spacing-x2;
-
-        &:last-child {
-          margin-right: 0;
-        }
-      }
+    h1 {
+      font-size: 1.6rem;
+      flex-basis: 100%;
+      text-align: center;
     }
-  }
-
-  .menu-item {
-    padding: $spacing-half 0;
 
     a {
       color: $white;
+      flex-basis: 100%;
+      font-size: 1.6rem;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
 
-      &:hover {
-        color: $yellow;
-      }
+  .menu-main-menu-container {
+    flex-direction: column;
+    height: 0;
+    text-align: center;
+    text-transform: uppercase;
+    transition: height 0.5s ease-in-out;
+
+    @media ($tablet) {
+      height: auto;
+      padding: $spacing-x2;
+    }
+    
+    &.open {
+      display: flex;
+      height: 131px;
     }
 
-    &.current_page_item {
-      a {
+    .menu {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 16px;
+
+      @media ($tablet) {
+        flex-direction: row;
+        padding-bottom: 0;
+      }
+      
+      li {
+        line-height: 1.8;
+
         @media ($tablet) {
-          border-bottom: 2px solid $yellow;
+          margin: 0 $spacing-x2;
         }
-        color: $yellow;
-        padding-bottom: $spacing-half;
+
+        &:last-child {
+          @media ($tablet) {
+            margin-right: 0;
+          }
+        }
+
+        &.current_page_item {
+          a {
+            @media ($tablet) {
+              border-bottom: 2px solid $yellow;
+            }
+            color: $yellow;
+            padding-bottom: $spacing-half;
+          }
+        }
+      }
+
+      a {
+        color: $white;
       }
     }
   }
 }
+
+
+// .menu-main-menu-container {
+//   display: flex;
+//   flex-direction: column;
+//   text-align: center;
+//   text-transform: uppercase;
+
+//   @media ($tablet) {
+//     background-color: transparent;
+//     display: block;
+//     padding: $spacing-half 0;
+//   }
+
+//   .menu {
+//     display: none;
+//     font-weight: 600;
+
+//     @media ($tablet) {
+//       display: flex;
+//       flex-direction: row;
+//     }
+
+//     li {
+//       margin-top: 0;
+
+//       @media ($tablet) {
+//         margin: 0 $spacing-x2;
+
+//         &:last-child {
+//           margin-right: 0;
+//         }
+//       }
+//     }
+//   }
+
+//   .menu-item {
+//     padding: $spacing-half 0;
+
+//     a {
+//       color: $white;
+
+//       &:hover {
+//         color: $yellow;
+//       }
+//     }
+
+//     &.current_page_item {
+//       a {
+//         @media ($tablet) {
+//           border-bottom: 2px solid $yellow;
+//         }
+//         color: $yellow;
+//         padding-bottom: $spacing-half;
+//       }
+//     }
+//   }
+// }

@@ -1,7 +1,7 @@
 #footer {
   background-color: $black;
   color: $yellow;
-  padding: $spacing-x2;
+  padding: $spacing-x3 $spacing-x2 $spacing-x2;
 
   #social-media {
     align-items: center;
@@ -22,7 +22,7 @@
   #copyright {
     color: #f4f4f4;
     font-size: 1.1rem;
-    margin-top: $spacing-x2;
+    margin-top: $spacing;
     text-align: center;
     text-transform: uppercase;
 
