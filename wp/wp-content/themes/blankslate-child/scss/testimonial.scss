@@ -19,7 +19,7 @@
   }
 
   img {
-    @include box-shadow;
+    box-shadow: $box-shadow-1;
     border-radius: 50%;
     border: 3px solid $yellow;
     height: 100px;

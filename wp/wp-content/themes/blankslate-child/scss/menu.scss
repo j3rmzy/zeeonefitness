@@ -46,7 +46,7 @@
     
     &.open {
       display: flex;
-      height: 131px;
+      height: 160px;
     }
 
     .menu {
@@ -74,76 +74,29 @@
 
         &.current_page_item {
           a {
+            color: $yellow;
+            padding-bottom: $spacing-half;
+
             @media ($tablet) {
               border-bottom: 2px solid $yellow;
             }
-            color: $yellow;
-            padding-bottom: $spacing-half;
+
+            &:hover {
+              text-decoration: none;
+            }
           }
         }
       }
 
       a {
         color: $white;
+        padding-bottom: $spacing-half;
+
+        &:hover {
+          text-decoration: none;
+          border-bottom: 2px solid $white;
+        }
       }
     }
   }
 }
-
-
-// .menu-main-menu-container {
-//   display: flex;
-//   flex-direction: column;
-//   text-align: center;
-//   text-transform: uppercase;
-
-//   @media ($tablet) {
-//     background-color: transparent;
-//     display: block;
-//     padding: $spacing-half 0;
-//   }
-
-//   .menu {
-//     display: none;
-//     font-weight: 600;
-
-//     @media ($tablet) {
-//       display: flex;
-//       flex-direction: row;
-//     }
-
-//     li {
-//       margin-top: 0;
-
-//       @media ($tablet) {
-//         margin: 0 $spacing-x2;
-
-//         &:last-child {
-//           margin-right: 0;
-//         }
-//       }
-//     }
-//   }
-
-//   .menu-item {
-//     padding: $spacing-half 0;
-
-//     a {
-//       color: $white;
-
-//       &:hover {
-//         color: $yellow;
-//       }
-//     }
-
-//     &.current_page_item {
-//       a {
-//         @media ($tablet) {
-//           border-bottom: 2px solid $yellow;
-//         }
-//         color: $yellow;
-//         padding-bottom: $spacing-half;
-//       }
-//     }
-//   }
-// }

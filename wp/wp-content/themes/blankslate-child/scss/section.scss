@@ -39,7 +39,7 @@
     }
 
     .block {
-      @include box-shadow;
+      box-shadow: $box-shadow-1;
       align-items: center;
       background-color: $grey100;
       display: flex;

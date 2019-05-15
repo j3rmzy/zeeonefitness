@@ -1,60 +1,79 @@
-.contact {
-  form {
+.contact-form-wrapper {
+  display: flex;
+  justify-content: center;
+
+  .contact-form-inner {
+    box-shadow: $box-shadow-2;
+    border-bottom: 10px solid $yellow;
     display: flex;
+    flex-basis: 100%;
     flex-direction: column;
-
-    @media ($tablet) {
-      flex-direction: row;
-      justify-content: space-between;
-      display: flex;
-    }
-
-    .form-block {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      grid-row-gap: 0;
-      margin-bottom: $spacing;
-
-    }
-
-    .submit-btn-wrapper,
-    .recaptcha-wrapper {
-      justify-items: end;
-    }
-
-    .submit-btn-wrapper {
-      grid-template-columns: 1fr;
-    }
-
-    .ajax-loader {
-      @media ($tablet) {
-        grid-row-start: 1;
-        grid-row-end: 2;
-        justify-self: end;
-      }
-    }
-
-    .form-block-wrapper {
-      @media ($tablet) {
-        width: 100%;
-      }
-    }
+    justify-content: center;
+    padding: $spacing-x3;
   
-    input[type=text],
-    input[type=email],
-    textarea {
-      border: none;
-      padding: $spacing;
-      width: 100%;
+    @media ($tablet) {
+      flex-basis: 75%;
     }
 
-    input[type=submit] {
-      width: 100%;
+    @media ($desktop-md) {
+      flex-basis: 768px;
+    }
 
-      @media ($tablet) {
-        grid-column-start: 2;
-        grid-column-end: 3;
+    .contact-form {
+      flex-basis: 100%;
+
+      label {
+        font-weight: 400;
+      }
+    
+      input[type='text'],
+      input[type='email'],
+      select,
+      textarea {
+        background-color: $grey100;
+        font-family: $font-family;
+        border: 1px solid $grey200;
+      }
+    }
+  }
+}
+
+
+.wpforms-confirmation-container-full {
+  background-color: $white;
+  border: none;
+  border-top: 1px solid $grey100;
+
+  .sig {
+    color: $black;
+    font-weight: 600;
+    padding-top: $spacing;
+    text-transform: uppercase;
+  }
+}
+
+div.wpforms-container-full {
+  .wpforms-form {
+    .wpforms-title {
+      @extend .heading2;
+      text-align: center;
+      color: $yellow;
+      margin-bottom: $spacing-x2;
+    }
+
+    .wpforms-description {
+      @extend .heading2;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: $spacing-x3;
+    }
+
+    button[type=submit] {
+      @extend .btn;
+      border: none;
+    
+      &:hover {
+        border: none;
       }
     }
   }
